@@ -201,6 +201,12 @@ td, th {
   padding: 8px;
 }
 
+td {
+  color: #3c6e71;
+}
+
+
+
 tr:nth-child(even) {
   background-color: #dddddd;
 }
