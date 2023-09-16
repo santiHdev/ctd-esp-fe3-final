@@ -1,9 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useGlobalContext } from '../Context/Context'
-import { Reducer } from '../Context/Reducer'
+
 
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context

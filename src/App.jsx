@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import {Route, Routes} from "react-router-dom";
@@ -6,7 +5,6 @@ import Home from "./Routes/Home";
 import Contact from "./Routes/Contact";
 import Favs from "./Routes/Favs";
 import Detail from "./Routes/Detail";
-/* import './theme.css'; */
 import { useGlobalContext } from "./Context/Context";
 
 function App() {
