@@ -43,7 +43,7 @@ const [clicked, setClicked] = useState(false);
         <h3>{username}</h3>
 
         </Link>
-       {clicked ? <button className="favButton" onClick={removeFav}>Remove Favourite</button> :  <button onClick={addFav} className="favButton">Add fav</button>   }
+       {clicked ? <button className="favButton" onClick={removeFav}>Quitar Favorito</button> :  <button onClick={addFav} className="favButton">Agregar Favorito</button>   }
         
     </div>
   );
