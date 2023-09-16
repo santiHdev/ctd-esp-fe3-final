@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from "react";
 import { useGlobalContext } from '../Context/Context'
 import { Link } from 'react-router-dom'
-import doctorImg from '../assets/doctor.jpg'
+import doctorImg from '/images/doctor.jpg'
 
 
 
