@@ -1,3 +1,7 @@
+html, body{
+  height: 100%
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,30 +9,98 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+
 }
+
+.light {
+  color: #353535 !important;
+  background:  #ffffff !important;
+}
+
+.dark {
+  color: white  !important;
+  background: #353535 !important;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  border-radius: 5px;
+  background-color: #3c6e71;
+  color: #d9d9d9;
   padding: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
 }
 
+.favButton:hover{
+  background-color: #d9d9d9;
+  color: #3c6e71;
+}
+
 h1{
   text-align: center;
+  
 }
 
 nav{
   display: flex;
-  width: 80vw;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #3c6e71;
+  color: #ffffff;
+  height: 10vh;
+  /* width: 80vw;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1rem; */
 }
+
+.darkNav {
+  background-color: #284b63;
+  color: #dddddd;
+
+}
+
+nav span {
+  color: #ffba08;
+}
+
+nav button {
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  color: #284b63;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.themButtonDark {
+  border-radius: 5px;
+  background-color: #000;
+  color: #d9d9d9;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.themButtonDark:hover {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+nav button:hover {
+  background-color: #000;
+}
+
 
 a{
   color: #000;
@@ -37,18 +109,20 @@ a{
   cursor: pointer;
 }
 a:hover{
-  color: rgb(136, 136, 136);
+  color: #ffba08;
+  
 } 
 
 footer {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
   width: 90%;
-  height: 40px;
+  height: 10vh;
   margin-top: 2rem;
 }
 
@@ -59,6 +133,7 @@ footer > img{
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
+  
 }
 
 form{
@@ -75,14 +150,20 @@ form{
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  padding: 10px;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
 }
 
-.card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+.card img {
+  width: 100%;
+  
 }
+
+
+
 
 .card-grid{
   display: flex;
@@ -92,6 +173,14 @@ form{
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.favs{
+  height: 70vh;
+}
+
+.contact{
+  height: 70vh;
 }
 
 table {
@@ -113,10 +202,3 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
-  background-color: #12121296;
-  color: white;
-}
-.dark > a {
-  color: white;
-}

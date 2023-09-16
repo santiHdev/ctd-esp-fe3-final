@@ -44,7 +44,7 @@ const Form = () => {
     <div>
       <h1>Ingrese sus datos para contacto</h1>
       <form onSubmit={onSubmitForm}>
-            <label htmlFor="nombre">Nombre completo:</label>
+            <label htmlFor="nombre">Nombre y Apellido:</label>
             <input type="text" name="nombre" value={name} onChange={onChangeName} />
             <label htmlFor="email">Email:</label>
             <input type="email" name="email" value={email} onChange={onChangeEmail} />
@@ -52,7 +52,7 @@ const Form = () => {
 
     </form>
     {errorMessage && <h3 style={{color: '#e63946'}}>Por favor verifique su informacion nuevamente!</h3>}
-    {successMessage && <h3 style={{color: '#e63946'}}>Gracias {name}!, te contactaremos cuando antes vía mail</h3>}
+    {successMessage && <h3 style={{color: '#ffba08'}}>Gracias {name}!, te contactaremos cuando antes vía mail</h3>}
     </div>
   );
 };

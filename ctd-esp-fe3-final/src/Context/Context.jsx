@@ -16,7 +16,8 @@ const initialState = {
   favs: initialFavState,
   dentists: [],
   dentist: {},
-  theme: initialTheme
+  theme: initialTheme,
+  clicked: false
 }
 
 
@@ -25,6 +26,8 @@ const Context = ({children}) => {
    
 
     const [state, dispatch] = useReducer(Reducer, initialState)
+
+   
 
     
     /* const [favsState, favsDispatch] = useReducer(favsReducer, initialFavState) */
@@ -39,6 +42,11 @@ useEffect(() => {
   })
   .catch(err => console.log(err))
 }, [])
+
+useEffect(() =>{
+  localStorage.setItem('favs', JSON.stringify(state.favs))
+}, [state.favs])
+
 
 return (
     <GlobalContext.Provider value={{state, dispatch}}>

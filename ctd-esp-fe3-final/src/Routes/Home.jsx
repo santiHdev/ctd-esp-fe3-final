@@ -13,7 +13,7 @@ const {state} = useGlobalContext()
 
 
   return (
-    <main className='' >
+    <main className={state.theme} >
       <h1>Home</h1>
       <div className='card-grid'>
      {state.dentists.map( den =>  <Card name={den.name} username={den.username} key={den.id} id={den.id}/>)}
