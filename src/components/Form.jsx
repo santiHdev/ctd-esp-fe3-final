@@ -47,8 +47,6 @@ const Form = () => {
       setSuccessMessage(false)
     }
 
-   
-
 
   }
 
@@ -63,7 +61,7 @@ const Form = () => {
             <button type='submit'>Enviar</button>
 
     </form>
-    {/* {errorMessage && <h3 style={{color: '#e63946'}}>Por favor verifique su informacion nuevamente!</h3>} */}
+    
     {nameError && <h3 style={{color: '#e63946'}}>Verifique su nombre nuevamente, debe contener nombre y apellido</h3>}
     {emailError && <h3 style={{color: '#e63946'}}>Verifique que su email tenga el formato correcto</h3>}
 

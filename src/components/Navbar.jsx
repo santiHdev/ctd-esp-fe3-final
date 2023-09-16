@@ -29,10 +29,6 @@ const Navbar = () => {
        <Link to='/contact' className={state.theme == 'dark' ? 'darkNav' : '' }>Contact</Link>
        <button onClick={toggleTheme} className={state.theme == 'dark' ? 'themButtonDark' : '' }>Change theme</button>
       </div>
-      {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-      
-      {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      
     </nav>
   )
 }

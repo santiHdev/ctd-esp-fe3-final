@@ -1,6 +1,5 @@
 import axios from 'axios'
-import {createContext, useContext, useState, useReducer, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
+import {createContext, useContext, useReducer, useEffect} from 'react'
 import { Reducer } from './Reducer'
 
 
@@ -23,14 +22,7 @@ const initialState = {
 
 const Context = ({children}) => {
 
-   
-
-    const [state, dispatch] = useReducer(Reducer, initialState)
-
-   
-
-    
-    /* const [favsState, favsDispatch] = useReducer(favsReducer, initialFavState) */
+   const [state, dispatch] = useReducer(Reducer, initialState)
 
 const url = 'https://jsonplaceholder.typicode.com/users'
 
