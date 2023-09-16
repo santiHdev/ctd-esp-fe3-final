@@ -9,8 +9,7 @@ export const Reducer = (state, action) => {
      case 'ADD_FAVS':
         return {...state, favs: [...state.favs, action.payload]}
      case 'REMOVE_FAVS':
-      console.log('Removing')
-      return {...state, favs: [action.payload]}
+      return {...state, favs: action.payload}
      case 'THEME_LIGHT':
         return {...state, theme: 'light'}
      case 'THEME_DARK':

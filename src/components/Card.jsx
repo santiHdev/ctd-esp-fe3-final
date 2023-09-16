@@ -26,9 +26,13 @@ const [clicked, setClicked] = useState(false);
   const removeFav = () => {
 
     setClicked(false)
-    const removeFav = state.favs.filter(item => item.favId === fav.favId);
+    const removeFav = state.favs.filter(item => item.favId !== fav.favId);
+    console.log("removeFav")
+    console.log(removeFav)
     dispatch({ type: 'REMOVE_FAVS', payload: removeFav })
-    
+
+   
+
   }
 
   return (
