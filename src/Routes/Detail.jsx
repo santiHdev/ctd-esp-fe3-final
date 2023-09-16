@@ -28,8 +28,8 @@ const Detail = () => {
 }, [])
 
   return (
-    <>
-    <table>
+  <div className='detailTable'>
+   <table>
       <tr>
         <th>Name</th>
         <th>Email</th>
@@ -44,7 +44,10 @@ const Detail = () => {
       </tr>
     </table>
 
-    </>
+  </div>
+    
+
+    
   )
 }
 
