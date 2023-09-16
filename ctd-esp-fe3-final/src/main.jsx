@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './main.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import Context from './Context/Context.jsx'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <App/>
+   <Context>
+   <App/>
+   </Context>
   </BrowserRouter>
       
   
